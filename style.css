@@ -1,3 +1,459 @@
-:root {
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
 
+:root {
+    --body-bg-color: #22212C;
+    --text-color: #837E9F;
+    --bg-cards: #302F3D;
+    --bg-techs: #CB92B1;
+
+    font-family: 'Merriweather Sans', sans-serif;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: var(--body-bg-color);
+}
+
+#app{
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Conteiner{
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+
+    margin-top: 30px;
+
+}
+
+aside{
+    width: 350px;
+    height: 100%;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    margin-left: 10px;
+}
+
+.Perfil{
+    width: 348px;
+    height: 292px;
+
+    text-align: center;
+    color: var(--text-color);
+
+    border-radius: 15px;
+    margin-bottom: 20px;
+
+    background-color: var(--bg-cards);
+}
+
+.Perfil img{
+    border-radius: 50%;
+
+    width: 128px;
+    height: 128px;
+}
+
+.Perfil img{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 2px solid #00FF00;
+}
+
+.Perfil P{
+    font-size: 20px;
+    font-weight: 700;
+
+    margin-bottom: 5px;
+}
+
+.Social-midia{
+    width: 348px;
+    height: 348px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    border-radius: 15px;
+    margin-bottom: 20px;
+
+    background-color: var(--bg-cards);
+}
+
+.Social-midia p{
+    display: inline;
+}
+
+.Social-midia ul{
+    width: 80%;
+    height: 85%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.Social-midia ul li{
+    width: 100%;
+
+    list-style-type: none;
+}
+
+.Social-midia ul li a{
+    text-decoration: none;
+    color: var(--text-color);
+
+}
+
+.Social-midia ul li a svg{
+    margin-right: 10px;
+}
+
+.Softskils{
+    width: 348px;
+    height: 208px;
+
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+
+    color: var(--text-color);
+
+    background-color: var(--bg-cards);
+}
+
+.Softskils span{
+    color: var(--text-color);
+    font-size: 20px;
+    font-weight: 700;
+
+    display: block;
+
+    margin-block: 10px;
+
+}
+
+.Softskils  .Tec{
+    width: 100%;
+    height: 60%;
+
+    margin-bottom: 5px;
+
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  
+}
+
+.Softskils .Tec div{
+    width: 86px;
+    height: 24px;
+
+    text-align: center;
+    color: #000000;
+    font-size: 15px;
+    font-weight: 500;
+
+    border-radius: 30px;
+    padding-top: 3px;
+    background-color: var(--bg-techs);
+}
+
+.Softskils .Tec div:not(:last-child){
+    margin-right: 10px;
+}
+
+.Experience{
+    width: 348px;
+    height: 349px;
+
+    border-radius: 15px;
+    margin-bottom: 20px;
+
+    display: flex;
+    flex-direction: column;
+
+    color: var(--text-color);
+
+    background-color: var(--bg-cards);
+}
+
+.Experience span{
+    color: var(--text-color);
+    font-size: 20px;
+    font-weight: 700;
+
+    display: block;
+
+    margin-left: 15px;
+    margin-block: 20px;
+
+}
+
+.Experience ul{
+    width: 80%;
+    height: 70%;
+
+    margin-left: 40px;
+    margin-top: 10px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.Education{
+    width: 348px;
+    height: 352px;
+
+    border-radius: 15px;
+    margin-bottom: 20px;
+
+    display: flex;
+    flex-direction: column;
+
+    color: var(--text-color);
+
+    background-color: var(--bg-cards);
+}
+
+.Education #Educ{
+    font-size: 20px;
+    font-weight: 700;
+
+    display: block;
+
+    margin-block: 20px;
+    margin-left: 20px;
+
+}
+
+.Education ul{
+    width: 80%;
+    height: 70%;
+
+    margin-left: 40px;
+    margin-top: 10px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.Education ul li {
+    display: flex;
+    flex-direction: column;
+}
+
+ul li span{
+    font-weight: 700;
+}
+
+section{
+    width: 80%;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.Projects{
+    width: 95%;
+    height: 86px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding-inline: 15px;
+    border-radius: 15px;
+
+    color: var(--text-color);
+
+    background-color: var(--bg-cards);
+}
+
+.My-repos{
+    width: 95%;
+    height: 186px;
+
+    margin-top: 30px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    color: var(--text-color);
+}
+
+.repo-one{
+    width: 50%;
+    height: 186px;
+
+    padding-left: 15px;
+    border-radius: 15px;
+    margin-right: 5px;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    background-color: var(--bg-cards);
+}
+
+.Name-repo-one{
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+
+    margin-bottom: 10px;
+}
+
+.Name-repo-one svg {
+    margin-right: 10px;
+}
+
+.repo-one p{
+    margin-bottom: 10px;
+}
+
+.footer-repo-one{
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding-right: 20px;
+    margin-top: 10px;
+}
+
+.footer-repo-one svg:nth-child(2){
+    margin-left: 10px;
+}
+
+
+.repo-two{
+    width: 50%;
+    height: 186px;
+
+    padding-left: 15px;
+    border-radius: 15px;
+    margin-left: 5px;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    background-color: var(--bg-cards);
+}
+
+.Name-repo-two{
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+
+    margin-bottom: 10px;
+}
+
+.Name-repo-two svg {
+    margin-right: 10px;
+}
+
+.repo-two p{
+    margin-bottom: 10px;
+}
+
+.footer-repo-two{
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding-right: 20px;
+    margin-top: 10px;
+}
+
+.footer-repo-two svg:nth-child(2){
+    margin-left: 10px;
+}
+
+#Post{
+    width: 95%;
+    height: 86px;
+
+    margin-top: 30px;
+    border-radius: 15px;
+    padding-left: 15px;
+    
+    display: flex;
+    align-items: center;
+
+    background-color: var(--bg-cards);
+
+    color: var(--text-color);
+
+}
+
+.First-post{
+    width: 95%;
+    height: 210px;
+
+    background-color: var(--bg-cards);
+
+    color: var(--text-color);
+
+    margin-top: 30px;
+    border-radius: 15px;
+    padding: 15px;
+
+    display: flex;
+    align-items: center;
+}
+
+.First-post img{
+    width: 128px;
+    height: 128px;
+
+    border-radius: 50%;
+}
+
+.Subtitle-post{
+    padding-left: 20px;
+
+    line-height: 30px;
 }
